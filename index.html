@@ -68,6 +68,7 @@
             top:10px;
             left:20px;
             cursor: pointer;
+            z-index: 100;
         }
         header .hamb div{
             width: 1.6rem;
@@ -75,20 +76,31 @@
             margin: .2rem;
             background-color: white;
             box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 100;
         }
         .hamb:hover div{
             background-color:rgba(0, 0, 0, 0.781);
             box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
         }
+        nav{
+            font: normal normal 1.2rem var(--font-5);
+        }
         nav ul{
             display: flex;
-            justify-content: space-evenly;   
-            background-image:linear-gradient( to bottom,rgb(15, 128, 25), rgb(2, 95, 2)) ;      
-            padding-top: 1rem;   
+            justify-content: space-evenly;
+            background-image:linear-gradient(to bottom, rgb(199, 199, 29),rgb(219, 219, 58));
+            padding-top: 1rem;
+            flex-direction: column;
+            align-items: stretch;
+            flex-wrap: nowrap;  
+            position: absolute;
+            top: 13px;
+            left: -500px;
         }
         nav ul li{
-            padding: .4rem;
-            color: white;            
+            padding: .8rem;
+            color: white;    
+            text-align: center;        
         }
     </style>
 </head>
