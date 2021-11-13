@@ -61,7 +61,8 @@
         }
         header h2{
             text-align: center;
-            font: normal normal 2rem serif;            
+            font: normal normal 2rem serif;    
+            padding: .4rem;        
         }
         header .hamb{
             position: fixed;
@@ -82,6 +83,24 @@
             background-color:rgba(0, 0, 0, 0.781);
             box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
         }
+        .openmenu .hamb{
+            top: 4%;
+            left: 12%;
+            box-shadow: 0 0 0 black;
+        }
+        .openmenu #line1{
+            transform: rotate(45deg) translate(0.25rem, 0.35rem);
+            z-index: 16;
+        }
+        .openmenu #line2{
+            opacity: 0;
+            visibility: hidden;
+            z-index: 16;
+        }
+        .openmenu #line3{
+            transform: rotate(-45deg) translate(0.3rem, -0.45rem);
+            z-index: 16;
+        }
         nav{
             font: normal normal 1.2rem var(--font-5);
         }
@@ -97,6 +116,9 @@
             top: 13px;
             left: -500px;
         }
+        .openmenu nav ul{
+            left: 1px;
+        }
         nav ul li{
             padding: .8rem;
             color: white;    
@@ -110,9 +132,9 @@
             <h1>SOCIOLOGIA</h1>
             <h2>Consciencia Negra</h2>
             <div class="hamb">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
             </div>
         </header>
         <nav>
@@ -125,5 +147,13 @@
             </ul>
         </nav>
     </div>
+    <script>
+        let hamb = document.querySelector('.hamb')
+        hamb.addEventListener('click', openmenu)
+        function openmenu(){
+            let cont = document.querySelector('.container')
+            cont.classList.toggle('openmenu')
+        }
+    </script>
 </body>
 </html>
