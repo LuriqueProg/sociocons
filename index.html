@@ -84,24 +84,27 @@
             box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
         }
         .openmenu .hamb{
-            top: 2%;
+            top: 1%;
             left: 12%;
-            box-shadow: 0 0 0 black;
+            
         }
         .openmenu #line1{
             transform: rotate(45deg) translate(0.25rem, 0.35rem);
-            z-index: 16;
-            box-shadow: 0 0 0 black;
+            z-index: 100;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
         }
         .openmenu #line2{
             opacity: 0;
             visibility: hidden;
-            z-index: 16;
+            z-index: 100;
         }
         .openmenu #line3{
             transform: rotate(-45deg) translate(0.3rem, -0.45rem);
-            z-index: 16;
-            box-shadow: 0 0 0 black;
+            z-index: 100;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+        }
+        .openmenu nav ul{
+            position: fixed;            
         }
         nav{
             font: normal normal 1.2rem var(--font-5);
@@ -126,6 +129,23 @@
             color: white;    
             text-align: center;        
         }
+        .card-group{
+            width: 80%;
+            margin: 2rem auto;
+        }
+        .card-group h2{
+            text-align: center;
+        }
+        .card{
+            position: relative;
+            z-index: -1;
+        }
+        .bio{
+            position: absolute;
+            top: 50px;
+            left: 195px;
+            text-align: justify;
+        }
     </style>
 </head>
 <body>
@@ -148,6 +168,20 @@
                 <li></li>
             </ul>
         </nav>
+        <main>
+            <div class="card-group">
+                <h2>Pessoas influentes sobre a consciencia negra</h2>
+                <div class="card">
+                    <h3>João da Cruz e Silva</h3>
+                    <div class="img-wrapper">
+                        <img src="joao.png" alt="">
+                    </div>
+                    <div class="bio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corporis dolores eveniet earum officia natus at ipsam sit dolor nesciunt tenetur quis numquam, aut, mollitia saepe quas placeat omnis iure. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit eum tempore nam consequuntur itaque praesentium ipsa architecto nobis quae harum! Odio eius ab consequuntur non. Voluptates aliquam magni molestiae perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, voluptate cupiditate rerum dolore nostrum sit consequuntur dolorem, repudiandae voluptatibus odio voluptates quae maxime in magni, voluptatum dignissimos accusamus hic minima.
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
     <script>
         let hamb = document.querySelector('.hamb')
