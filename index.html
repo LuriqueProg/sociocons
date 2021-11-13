@@ -132,7 +132,17 @@
         nav ul li{
             padding: .8rem;
             color: white;    
-            text-align: center;        
+            text-align: center; 
+            transition: all 2s;       
+        }
+        nav ul li:hover{
+            background-color: #fff;
+            color:black;
+            text-decoration: underline;
+            text-decoration-color: blue;
+        }
+        nav ul li a:focus{
+            color:red;
         }
         .card-group{
             width: 80%;
@@ -140,6 +150,7 @@
         }
         .card-group h2{
             text-align: center;
+            text-transform: uppercase;
         }
         .card{
             position: relative;
@@ -179,7 +190,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="home">
         <header>
             <h1>SOCIOLOGIA</h1>
             <h2>Consciencia Negra</h2>
@@ -191,6 +202,7 @@
         </header>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#j">João da Cruz e Silva</a></li>
                 <li><a href="#n">Nilo Peçanha</a></li>
                 <li><a href="#p">Pixinguinha</a></li>
