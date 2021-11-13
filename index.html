@@ -42,6 +42,8 @@
             margin: 0;
             padding: 0;
             list-style: none;
+            text-decoration: none;
+            color: inherit;
         }
         .container{
             max-width:2480px;
@@ -60,6 +62,23 @@
         header h2{
             text-align: center;
             font: normal normal 2rem serif;            
+        }
+        header .hamb{
+            position: fixed;
+            top:10px;
+            left:20px;
+            cursor: pointer;
+        }
+        header .hamb div{
+            width: 1.6rem;
+            height: .3rem;
+            margin: .2rem;
+            background-color: white;
+            box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .hamb:hover div{
+            background-color:rgba(0, 0, 0, 0.781);
+            box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
         }
         nav ul{
             display: flex;
@@ -86,10 +105,10 @@
         </header>
         <nav>
             <ul>
-                <li>João da Cruz e Silva</li>
-                <li>Nilo Peçanha</li>
-                <li>Pixinguinha</li>
-                <li>Carolina Maria de Jesus</li>
+                <li><a href="#">João da Cruz e Silva</a></li>
+                <li><a href="#">Nilo Peçanha</a></li>
+                <li><a href="#">Pixinguinha</a></li>
+                <li><a href="#">Carolina Maria de Jesus</a></li>
                 <li></li>
             </ul>
         </nav>
