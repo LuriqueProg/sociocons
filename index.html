@@ -45,6 +45,9 @@
             text-decoration: none;
             color: inherit;
         }
+        body{
+            background-color: #eee;
+        }
         .container{
             max-width:2480px;
             margin: auto;
@@ -123,6 +126,7 @@
         }
         .openmenu nav ul{
             left: 1px;
+            border-radius: 0 .5rem .5rem 2rem; 
         }
         nav ul li{
             padding: .8rem;
@@ -131,7 +135,7 @@
         }
         .card-group{
             width: 80%;
-            margin: 2rem auto;
+            margin: 2rem auto;            
         }
         .card-group h2{
             text-align: center;
@@ -139,12 +143,26 @@
         .card{
             position: relative;
             z-index: -1;
+            margin: 5rem 0;
+            background-color: #fff;
+            padding: .8rem;
+        }
+        .img-wrapper{
+            width: 15rem;
+            height: 18rem;
+        }
+        .img-wrapper img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem .5rem 1rem 0;            
         }
         .bio{
             position: absolute;
             top: 50px;
-            left: 195px;
+            left: 260px;
             text-align: justify;
+            text-indent: 1.5rem;
         }
     </style>
 </head>
@@ -164,8 +182,7 @@
                 <li><a href="#">João da Cruz e Silva</a></li>
                 <li><a href="#">Nilo Peçanha</a></li>
                 <li><a href="#">Pixinguinha</a></li>
-                <li><a href="#">Carolina Maria de Jesus</a></li>
-                <li></li>
+                <li><a href="#">Carolina Maria de Jesus</a></li>                
             </ul>
         </nav>
         <main>
@@ -180,6 +197,34 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corporis dolores eveniet earum officia natus at ipsam sit dolor nesciunt tenetur quis numquam, aut, mollitia saepe quas placeat omnis iure. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit eum tempore nam consequuntur itaque praesentium ipsa architecto nobis quae harum! Odio eius ab consequuntur non. Voluptates aliquam magni molestiae perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, voluptate cupiditate rerum dolore nostrum sit consequuntur dolorem, repudiandae voluptatibus odio voluptates quae maxime in magni, voluptatum dignissimos accusamus hic minima.
                     </div>
                 </div>
+                <div class="card">
+                    <h3>Nilo Peçanha</h3>
+                    <div class="img-wrapper">
+                        <img src="nilo.png" alt="">
+                    </div>
+                    <div class="bio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corporis dolores eveniet earum officia natus at ipsam sit dolor nesciunt tenetur quis numquam, aut, mollitia saepe quas placeat omnis iure. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit eum tempore nam consequuntur itaque praesentium ipsa architecto nobis quae harum! Odio eius ab consequuntur non. Voluptates aliquam magni molestiae perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, voluptate cupiditate rerum dolore nostrum sit consequuntur dolorem, repudiandae voluptatibus odio voluptates quae maxime in magni, voluptatum dignissimos accusamus hic minima.
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Pixinguinha</h3>
+                    <div class="img-wrapper">
+                        <img src="pixinga.png" alt="">
+                    </div>
+                    <div class="bio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corporis dolores eveniet earum officia natus at ipsam sit dolor nesciunt tenetur quis numquam, aut, mollitia saepe quas placeat omnis iure. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit eum tempore nam consequuntur itaque praesentium ipsa architecto nobis quae harum! Odio eius ab consequuntur non. Voluptates aliquam magni molestiae perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, voluptate cupiditate rerum dolore nostrum sit consequuntur dolorem, repudiandae voluptatibus odio voluptates quae maxime in magni, voluptatum dignissimos accusamus hic minima.
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Carolina Maria de Jesus</h3>
+                    <div class="img-wrapper">
+                        <img src="caroli.png" alt="">
+                    </div>
+                    <div class="bio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corporis dolores eveniet earum officia natus at ipsam sit dolor nesciunt tenetur quis numquam, aut, mollitia saepe quas placeat omnis iure. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit eum tempore nam consequuntur itaque praesentium ipsa architecto nobis quae harum! Odio eius ab consequuntur non. Voluptates aliquam magni molestiae perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, voluptate cupiditate rerum dolore nostrum sit consequuntur dolorem, repudiandae voluptatibus odio voluptates quae maxime in magni, voluptatum dignissimos accusamus hic minima.
+                    </div>
+                </div>
+                
             </div>
         </main>
     </div>
